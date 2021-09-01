@@ -1,3 +1,7 @@
+# -*- coding: utf-8; -*-
+# Para digitar notas com casas decimais, utilize o ponto (.)
+# Ex.: 5.4, 7.3 etc
+
 notas = []
 num_notas = int(input("Quantas notas você quer tirar a média: "))
 for i in range(num_notas):
