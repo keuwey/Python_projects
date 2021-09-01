@@ -1,6 +1,7 @@
 # -*- coding: utf-8; -*-
 # Este é um algoritmo gerador de senha por substituição, onde é necessário
 # apenas uma chave base para gerar uma senha
+# Ex.: Julinha = -$=ç§(0
 
 chave = input("Digite a base da sua senha: ")
 senha = ""
