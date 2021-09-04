@@ -1,4 +1,6 @@
 # -*- coding: utf-8; -*-
+# Um simples script para realizar a média de um dado número
+# de notas
 # Para digitar notas com casas decimais, utilize o ponto (.)
 # Ex.: 5.4, 7.3 etc
 
