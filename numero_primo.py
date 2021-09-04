@@ -6,7 +6,10 @@
 
 numero = int(input("Digite um número: "))
 n = numero - 1
-if (n ** numero) % numero == n:
+if numero == 0:
+    print("\n%d não é primo" % numero)
+elif (n ** numero) % numero == n:
     print("\n%d é primo" % numero)
 else:
     print("\n%d não é primo" % numero)
+    
