@@ -14,7 +14,7 @@ def cesar(data, key, mode):
             new_index = new_index % len(alfabeto)
             new_data += alfabeto[new_index:new_index+1] # Adicionando o novo caractere na posição calculada
     return "\n" + new_data
-data = input("Digite a mensagem a ser cifrada: ")
+data = input("Digite a mensagem: ")
 key = int(input("\nDigite a chave da cifra: "))
 mode = int(input("\nDigite o modo (cifrar = 1, decifrar = 0): " ))
     
