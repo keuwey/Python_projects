@@ -1,7 +1,6 @@
 """
-Este script é um gerador de senhas que trabalha usando a
-biblioteca de números pseudoaleatórios e nele é possível definir
-o tamanho da senha
+This script is a password generator that works using the
+pseudorandom number library
 
 """
 
