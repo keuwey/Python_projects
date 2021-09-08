@@ -11,7 +11,10 @@ def somaAte(limite):
     while numero <= limite:
         soma += numero
         numero += 1
-    return "\n" + soma
+    print()
+    return soma
     
 if __name__ == '__main__':
     print(somaAte(int(input("Digite um número: "))))
+    print()
+    
