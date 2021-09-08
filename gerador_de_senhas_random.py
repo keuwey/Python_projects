@@ -1,4 +1,5 @@
 """
+
 This script is a password generator that works using the
 pseudorandom number library
 
