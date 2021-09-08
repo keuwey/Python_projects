@@ -1,6 +1,9 @@
-# -*- coding: utf-8; -*-
-# Este script soma os números reais e inteiros de 0 até o limite
-# Ex.: 0 + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55
+"""
+
+This script sums the natural numbers up to a given limit.
+Ex.: 0 + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55
+
+"""
 
 def somaAte(limite):
     soma = 0
