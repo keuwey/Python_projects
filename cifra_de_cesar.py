@@ -1,5 +1,4 @@
-# -*- coding: utf-8; -*-
-# Um script que cifra mensagens utilizando a cifra de César
+# This script creates messages using Caesar cipher
 
 def cesar(data, key, mode):
     alfabeto = 'abcdefghijklmnopqrstuvwxyzàáãâéêóôõíúçABCDEFGHIJKLMNOPQRSTUVWXYZÀÁÃÂÉÊÓÕÍÚÇ'
@@ -14,8 +13,10 @@ def cesar(data, key, mode):
             new_index = new_index % len(alfabeto)
             new_data += alfabeto[new_index:new_index+1] # Adicionando o novo caractere na posição calculada
     return "\n" + new_data
+print()
 data = input("Digite a mensagem: ")
 key = int(input("\nDigite a chave da cifra: "))
 mode = int(input("\nDigite o modo (cifrar = 1, decifrar = 0): " ))
     
 print(cesar(data, key, mode))
+print()
