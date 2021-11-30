@@ -1,7 +1,7 @@
-# This script creates messages using Caesar cipher
+# Esse script codifica mensagens usando a cifra de César
 
 def cesar(data, key, mode):
-    alfabeto = 'abcdefghijklmnopqrstuvwxyzàáãâéêóôõíúçABCDEFGHIJKLMNOPQRSTUVWXYZÀÁÃÂÉÊÓÕÍÚÇ'
+    alfabeto = 'abcçdefghijklmnopqrstuvwxyzABCÇDEFGHIJKLMNOPQRSTUVWXYZ'
     new_data = ''
     for c in data:
         index = alfabeto.find(c)
