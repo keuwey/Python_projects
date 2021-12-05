@@ -115,7 +115,5 @@ elif modo == '0':
     decipher_msg = input("Digite o números a serem decifrados: ")
     print("\n", number_to_text(decipher_msg))
 
-    print("\n", "-=-" * 25)
-
 else:
     print("Digite uma opção válida")
