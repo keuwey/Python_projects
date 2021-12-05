@@ -1,5 +1,4 @@
 import re
-print("-=-" * 25)
 print("Bem-vindo(a) ao programa\n")
 
 """
@@ -92,10 +91,8 @@ if modo == '1':
         elif x.lower() == 'z':
             msg_cifrada = '9999 '
             print(msg_cifrada, end="")
-        
-        print("-=-" * 25)
 
-        """"
+    """"
 
         Parece que eu ainda vou ter que fazer com que cada
         palavra cifrada fique com um hífen, denotando que se trata
@@ -103,7 +100,7 @@ if modo == '1':
         Ex.: >>> 666-444 7-777-2-9999-33-777
              >>> Oi prazer
 
-        """
+    """
 
 elif modo == '0':
     phone_letters = ["", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"]
