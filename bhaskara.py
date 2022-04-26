@@ -1,7 +1,6 @@
 """
 
-This script solves quadratic equations using the
-Bhaskara's formula
+Este programa usa a fórmula de Bháskara para resolver equações quadráticas.
 
 """
 
