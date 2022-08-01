@@ -1,0 +1,1 @@
+from algoritmos_cubo import Cubo
