@@ -1,15 +1,25 @@
-# -*- coding: utf-8; -*-
-# Um script para checar se um dado número é primo
-# Por definição, um número primo é todo número N inteiro
-# que é divisível apenas por 1 e por ele mesmo
-# Ex.: 3, 5, 7, 11 etc
+def is_prime(number):
 
-numero = int(input("Digite um número: "))
-n = numero - 1
-if numero == 0:
-    print("\n%d não é primo" % numero)
-elif (n ** numero) % numero == n:
-    print("\n%d é primo" % numero)
-else:
-    print("\n%d não é primo" % numero)
-    
+    if number < 2:
+        return False
+    for i in range(2, number):
+        if number % i == 0:
+            return False
+    return True
+
+
+def main():
+    number = int(input("Digite um número: "))
+
+    if is_prime(number):
+        print(f"{number} é primo")
+    else:
+        print(f"{number} não é primo")
+
+
+print(is_prime(5))
+print(is_prime(7))
+print(is_prime(710))
+
+if __name__ == 'main':
+    main()

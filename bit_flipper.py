@@ -1,9 +1,10 @@
-"""
+def inverter_bits(bits: str) -> str:
+    """
+    Inverte os bits de uma string de bits.
+    Exemplo: 0100101 > 1011010
+    """
+    return ''.join('1' if x == '0' else '0' for x in bits)
 
-This is a simple bit manipulation script, swapping 0s for 1s
-Ex.: >>> 0100101
-.... 1011010
-
-"""
-
-print(''.join('1' if x == '0' else '0' for x in input()))
+bits = input()
+invertidos = inverter_bits(bits)
+print(invertidos)

@@ -1,9 +1,9 @@
 import re
-# print("-=-" * 25)
-# print("Bem-vindo(a) ao programa\n")
 
-phone_letters = ["", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"]
-def number_to_text(val):
+
+def number_to_text(val: str) -> str:
+    phone_letters = ["", "", "abc", "def", "ghi",
+                     "jkl", "mno", "pqrs", "tuv", "wxyz"]
     groups = [match.group() for match in re.finditer(r'(\d)\1*', val)]
     result = ""
     for group in groups:
@@ -13,5 +13,5 @@ def number_to_text(val):
     return result
 
 
-decipher_msg = input("Digite o números a serem decifrados: ")
+decipher_msg = input("Digite os números a serem decifrados: ")
 print(number_to_text(decipher_msg))
