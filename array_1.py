@@ -12,6 +12,7 @@
 # print(new_array)
 
 #function called multiply, taking an int[], returns int[]
+
 def multiply(values):
     newData = []
     valuesLength = len(values) - 1
