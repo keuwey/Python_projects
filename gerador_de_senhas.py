@@ -1,61 +1,13 @@
-# -*- coding: utf-8; -*-
-# Este é um algoritmo gerador de senha por substituição, onde é necessário
-# apenas uma chave base para gerar uma senha
-# Ex.: Julinha = -$=ç§(0
+import random
 
-chave = input("Digite a base da sua senha: ")
-senha = ""
-for letra in chave:
-    if letra in "Aa":
-        senha += "0"
-    elif letra in "Bb":
-        senha += "@"
-    elif letra in "Cc":
-        senha += "#"
-    elif letra in "Dd":
-        senha += "$"
-    elif letra in "Ee":
-        senha += "%"
-    elif letra in "Ff":
-        senha += "&"
-    elif letra in "Gg":
-        senha += "6"
-    elif letra in "Hh":
-        senha += "("
-    elif letra in "Ii":
-        senha += "ç"
-    elif letra in "Jj":
-        senha += "-"
-    elif letra in "Kk":
-        senha += "]"
-    elif letra in "Ll":
-        senha += "="
-    elif letra in "Mm":
-        senha += "+"
-    elif letra in "Nn":
-        senha += "§"
-    elif letra in "Oo":
-        senha += "¢"
-    elif letra in "Pp":
-        senha += "£"
-    elif letra in "Qq":
-        senha += "?"
-    elif letra in "Rr":
-        senha += "/"
-    elif letra in "Ss":
-        senha += "5"
-    elif letra in "Tt":
-        senha += "1"
-    elif letra in "Uu":
-        senha += "$"
-    elif letra in "Ww":
-        senha += "$"
-    elif letra in "Xx":
-        senha += ">"
-    elif letra in "Yy":
-        senha += ","
-    elif letra in "Zz":
-        senha += ":"
-    else:
-        senha += letra
-print(senha)
+def gerar_senha(tam_senha: int) -> str:
+    caracteres = ["!", "@", "#", "$", "%", "&", "*", "(", ")", "_", "+", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "=", "/", "?", "[", "{", "]", ",", ".", ";", "<", ">", ":", "|", "A", "a", "B", "b", "C", "c", "D", "d", "E", "e", "F", "f", "G", "g", "H", "h", "I", "i", "J", "j", "K", "k", "L", "l", "M", "m", "N", "n", "O", "o", "P", "p", "Q", "q", "R", "r", "S", "s", "T", "t", "U", "u", "V", "v", "W", "w", "X", "x", "Y", "y", "Z", "z"]
+    random.shuffle(caracteres)
+    senha = ""
+    for i in range(tam_senha):
+        senha += random.choice(caracteres)
+    return senha
+
+tam_senha = int(input("Qual o tamanho da senha: "))
+print()
+print(gerar_senha(tam_senha))
